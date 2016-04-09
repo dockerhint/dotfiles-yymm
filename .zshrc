@@ -83,5 +83,5 @@ setopt list_packed
 # ====================
 # Environment Settings
 # ====================
-source <(antibody init)
+#source <(antibody init)
 source $HOME/.zshrc.env
