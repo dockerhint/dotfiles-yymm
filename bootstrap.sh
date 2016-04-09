@@ -5,20 +5,6 @@ do
 done
 
 
-case "${OSTYPE}" in
-# Mac(Unix)
-darwin*)0
-    cd ~/.vim/bundle/vimproc.vim && make -f make_mac.mak
-    ;;  
-# Linux
-linux*)
-    #cd ~/.vim/bundle/vimproc.vim && make -f make_unix.mak
-    curl -s https://raw.githubusercontent.com/getantibody/installer/master/install | bash -s
-    ;;  
-esac
-
-#vim -u ~/.vimrc -i NONE -c "try | NeoBundleUpdate! | finally | q! | endtry" -e -s -V1
-
 function askYesOrNo {
   MSG=$1
   while :
